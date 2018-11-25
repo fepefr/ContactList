@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: ContactList
+  buildpack: java_buildpack
+  path: ./target/ContactList-1.0-SNAPSHOT.jar
+  memory: 1024M
+  domain: mybluemix.net
+  host: contactlist
+  services:
+    - contactlist-cloudant-1543179526246
